@@ -1,0 +1,265 @@
+@import url('/webfonts/socicon.css');
+
+body {
+  font-family:'Open Sans',sans-serif;
+  background-color:#DAE3CD;
+  color:#31461f;
+  font-size:10pt;
+  text-rendering: optimizeLegibility;
+}
+
+div.clear {
+  clear:both;
+}
+
+#titlebar {
+  margin-top:20px;
+  margin-left:auto;
+  margin-right:auto;
+  width:820px; 
+}
+
+#maintitle {
+  position:relative;
+  top:15px;
+  float:left;
+  font-size: 30pt;
+  font-weight:bold;
+  font-family: 'Open Sans',sans-serif;
+  height:55px;
+  letter-spacing:4px;
+  text-shadow: 2px 1px white;
+}
+
+#maintitle a {
+  color:#437DA6;
+}
+
+#maintitle a:hover {
+  color:#651305;
+}
+
+#subtitle {
+  letter-spacing:2px;
+  float:left;
+  position:relative;
+  top:5px;
+  font-size:25pt;
+  font-weight:normal;
+  font-family: 'Alex Brush', cursive;
+  height:40px;
+}
+
+#navigation {
+  float:right;
+  font-size:10pt;
+}
+
+#navigation li {
+  list-style-type:none;
+  display:inline;
+  padding-left:40px;
+}
+
+#navgation li:first-child {
+  padding-left:0px;
+  color:red;
+}
+
+a {
+  text-decoration:none;
+  color:#437DA6;
+}
+
+a:hover {
+  color:#651305;
+}
+
+#container {
+  width:800px;
+  height:300px;
+  margin-left:auto;
+  margin-right:auto;
+  
+  padding:10px;
+  border: 1px solid #BDC0B9;
+  border-radius: 5px;
+  overflow:hidden;
+  background-color:#FBFCFA;
+  }
+
+#container-frontpage {
+  width:820px;
+  height:320px;
+  margin-left:auto;
+  margin-right:auto;
+  
+/*  background-color:#FBFCFA;*/
+  background-color:black;
+  position:relative;
+  border: 1px solid #BDC0B9;
+  border-radius: 5px;
+  overflow:hidden;
+}
+
+#container-frontpage img {
+    position:absolute;
+    height:320px;
+    width:820px;
+}
+
+img.profilepic {
+  width:90px;
+  height:90px;
+  float:left;
+  margin-right:10px;
+  margin-bottom:10px;
+  border:1px solid #999977;
+}
+
+h1 {
+  font-size:18pt;
+  font-weight:normal;
+  color:#437DA6;
+  margin-left:20px;
+}
+
+h2 {
+  font-size: 12pt;
+  color: #651305;
+  font-weight:normal;
+  padding-bottom:0;
+  margin-bottom:0;
+  margin-top:0;
+}
+
+.schedule {
+  font-size:9pt;
+  color:#437DA6;
+}
+
+.profile {
+  min-height:40px;
+  display:inline-block;
+  width:370px;
+  padding-left:20px;
+  vertical-align:top;
+  height:130px;
+  font-size:9pt;
+}
+
+.profile p {
+  padding-top:0;
+  margin-top:0;
+  line-height:14pt;
+}
+
+#contactinfo {
+  font-size:10pt;
+  padding-top:10px;
+  height:57px;
+  overflow:hidden;
+  position:relative;
+  height:90px;
+}
+
+#address {
+  position:absolute;
+  left: 150px;
+  top:8px;
+}
+
+#hours {
+  position:absolute;
+  left: 370px;
+  top:8px;
+}
+
+#phone {
+  position:absolute;
+  left: 723px;
+  top:8px;
+}
+
+ul {
+  padding-left:20px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.service {
+  display:inline-block;
+  text-align:left;
+  width:300px;
+  margin-bottom:10px;
+}
+
+.price {
+  display:inline-block;
+  text-align:right;
+  width:100px;
+  margin-bottom:10px;
+}
+
+#special {
+  font-size:10pt;
+  text-align:center;
+  padding-top:50px;
+  clear:both;
+}
+
+#sideimage img {
+  width:250px;
+  float:right;
+  position:relative;
+  bottom:250px;
+  right:40px;
+  opacity:.4;
+}
+
+footer {
+  border-top: 1px solid #cccc99;
+  margin-top: 10px;
+  font-size:25pt;
+  text-align:center;
+  padding-top:10px;
+  font-family: 'Alex Brush', cursive;
+    text-shadow: 2px 2px white;
+}
+
+.social ul {
+  list-style-type: none;
+  display: inline-block !important;
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  display: inline-block !important;
+  padding: 0 3px;
+}
+
+.social li a {
+    font-size: 16pt;
+}
+
+#credit {
+  border-top: 1px solid #cccc99;
+  margin-top: 10px;
+  font-size:8pt;
+  text-align:center;
+  padding-top:10px;
+  color:#858d66;
+}
+
+.placeholder {
+  width:110px;
+  height:45px;
+  text-align:center;
+  padding-top:8px;
+  font-weight:bold;
+  border:1px dotted #999977;
+  border-radius: 5px;
+}

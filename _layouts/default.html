@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    
+    <link rel="stylesheet" href="/style.css" type="text/css" charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Parisienne|Alex+Brush' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+    {% include googleanalytics.html %}
+    
+    {% if page.slideshow %}
+    <script type="text/javascript" src="/js/slideshow.js"></script>
+    {% endif %}
+    
+    <title>{{ page.title }} </title>
+  </head>
+  
+  <body>
+    <div id="titlebar">
+      {% include maintitle.html %}  
+      
+      <div class="clear" />    
+      
+      {% include subtitle.html %}      
+      {% include navigation.html %} 
+    </div>
+    
+    <div class="clear" />
+    
+    {{ content }}
+    
+    <div id="contactinfo">
+      {% include booking.html %}
+      {% include address.html %}
+      {% include hours.html %}
+      {% include phone.html %}
+    </div>
+    
+    <footer>
+      Walk-ins are welcome, but appointments are preferred.
+      <br/>
+      {% include social.html %}
+    </footer>
+    
+    <div id="credit">
+      Website designed by <a href="http://jmv.me/">Julia Van Cleve</a>
+    </div>
+  </body>
+</html>
+
+      
+      

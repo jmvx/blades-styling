@@ -1,0 +1,29 @@
+---
+title: Blades Styling
+description: > 
+  Conveniently located in the Charleston Plaza in Palo Alto, our neighborhood
+  salon is a hair place for everyone. Our stylists are friendly and will work
+  with you to help you achieve the look you want. Feel free to drop by or call
+  in for an appointment.
+slideshow: Yes
+layout: default
+images:
+  - slideshow/hair1.jpg
+  - slideshow/hair2.jpg
+  - slideshow/hair3.jpg
+  - slideshow/hair4.jpg
+  - slideshow/hair5.jpg
+  - slideshow/hair6.jpg
+  - slideshow/hair7.jpg
+  - slideshow/hair8.jpg
+---
+
+<div id="container-frontpage" class="slideshow" data-showduration="3s" data-fadeduration="1s">
+    {% for image in page.images %}
+      {% if forloop.first %}
+        <img src="{{ image }}" />
+      {% else %}
+        <img data-slidesrc="{{ image }}" />
+      {% endif %}
+    {% endfor %}
+</div>
