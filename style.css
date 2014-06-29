@@ -165,13 +165,13 @@ h2 {
 
 #address {
   position:absolute;
-  left: 150px;
+  left: 275px;
   top:8px;
 }
 
 #hours {
   position:absolute;
-  left: 370px;
+  left: 480px;
   top:8px;
 }
 
@@ -255,11 +255,10 @@ footer {
 }
 
 .placeholder {
-  width:110px;
-  height:45px;
+  width:180px;
+  height:80px;
   text-align:center;
-  padding-top:8px;
-  font-weight:bold;
-  border:1px dotted #999977;
+  padding-top:5px;
+  border:1px solid #cccc99;
   border-radius: 5px;
 }
