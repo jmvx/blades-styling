@@ -1,4 +1,4 @@
-Blades Styling
+blades-styling
 ======
 
 The process: http://jmv.me/blog/blades-styling/
