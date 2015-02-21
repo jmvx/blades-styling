@@ -19,11 +19,14 @@ images:
 ---
 
 <div id="container-frontpage" class="slideshow" data-showduration="3s" data-fadeduration="1s">
-    {% for image in page.images %}
-      {% if forloop.first %}
-        <img src="{{ image }}" />
-      {% else %}
-        <img data-slidesrc="{{ image }}" />
-      {% endif %}
-    {% endfor %}
+  {% for item in page.images %}
+    {% if forloop.last %}
+    <div class="slide">
+      <img src="{{ item }}" />
+    {% else %}
+    <div class="slide hidden-slide">
+      <img data-slidesrc="{{ item }}" />
+    {% endif %}
+    </div>
+  {% endfor %}
 </div>

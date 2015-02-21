@@ -165,19 +165,19 @@ h2 {
 
 #address {
   position:absolute;
-  left: 275px;
+  left: 0px;
   top:8px;
 }
 
 #hours {
   position:absolute;
-  left: 480px;
+  left: 350px;
   top:8px;
 }
 
 #phone {
   position:absolute;
-  left: 723px;
+  left: 720px;
   top:8px;
 }
 
@@ -254,7 +254,7 @@ footer {
   color:#858d66;
 }
 
-.placeholder {
+/*.placeholder {
   width:180px;
   height:80px;
   text-align:center;
@@ -262,3 +262,4 @@ footer {
   border:1px solid #cccc99;
   border-radius: 5px;
 }
+*/
