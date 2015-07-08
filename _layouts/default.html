@@ -5,6 +5,7 @@
     {% if page.description %}
     <meta name="description" content="{{ page.description }}">
     {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="/style.css" type="text/css" charset="utf-8">
     <link href='http://fonts.googleapis.com/css?family=Parisienne|Alex+Brush' rel='stylesheet' type='text/css'>
@@ -37,7 +38,6 @@
     <div id="contactinfo">
       {% include address.html %}
       {% include hours.html %}
-      {% include phone.html %}
     </div>
     
     <footer>

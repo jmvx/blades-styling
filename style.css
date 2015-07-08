@@ -115,6 +115,7 @@ img.profilepic {
   margin-right:10px;
   margin-bottom:10px;
   border:1px solid #999977;
+  display:inline-block;
 }
 
 h1 {
@@ -154,31 +155,26 @@ h2 {
   line-height:14pt;
 }
 
+.profile_info {
+    margin-left: 90px;
+    padding-left: 10px;
+}
+
 #contactinfo {
   font-size:10pt;
   padding-top:10px;
-  height:57px;
-  overflow:hidden;
-  position:relative;
-  height:90px;
 }
 
 #address {
-  position:absolute;
-  left: 0px;
-  top:8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
 }
 
 #hours {
-  position:absolute;
-  left: 350px;
-  top:8px;
-}
-
-#phone {
-  position:absolute;
-  left: 720px;
-  top:8px;
+    display: inline-block;
+    vertical-align: top;
+    width: 48%;
 }
 
 ul {
@@ -254,12 +250,88 @@ footer {
   color:#858d66;
 }
 
-/*.placeholder {
-  width:180px;
-  height:80px;
-  text-align:center;
-  padding-top:5px;
-  border:1px solid #cccc99;
-  border-radius: 5px;
+/* large media ----------- */
+@media only screen
+and (max-width : 820px) {
+/* Styles */
+    
+    #titlebar, #maintitle, #container-frontpage, #container {
+        width:100%;
+    }
+    
+    #container {
+        width:95%;
+        height:100%;
+    }
+    
+    .profile {
+        width: 95%;
+    }
+    
+    #sideimage img {
+        display:none;
+    }
+    
+    .profile {
+        height:100%;
+    }
 }
-*/
+
+/* medium media ----------- */
+@media only screen 
+and (max-width : 600px) {
+/* Styles */
+    
+    #maintitle, #subtitle, #navigation {
+        text-align:center;
+    }
+    
+    #subtitle {
+        float:none;
+        padding-top:10px;
+    }
+    
+    #navigation {
+        float:none;
+    }
+    
+    ul#navigation{
+        padding-left:0px;
+    }
+    
+    #navigation li {
+        padding-right:40px;
+    }
+    
+}
+ 
+/* small media ----------- */
+@media only screen
+and (max-width : 480px) {
+    
+    #titlebar {
+        margin-top:0px;
+    }
+    
+    #maintitle a {
+        font-size:20pt;
+    }
+    
+    #container {
+        width:93%;
+    }
+    
+    .service {
+        width:93%;
+        margin-bottom:0;
+    }
+    
+    .price {
+        margin-bottom:20px;
+    }
+    
+    #navigation li {
+        padding-right: 20px;
+        padding-left:20px;
+    }
+}
