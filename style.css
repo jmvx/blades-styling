@@ -175,6 +175,7 @@ h2 {
     display: inline-block;
     vertical-align: top;
     width: 48%;
+    text-align:right;
 }
 
 ul {
@@ -216,13 +217,20 @@ li {
 }
 
 footer {
+  position:relative;
   border-top: 1px solid #cccc99;
   margin-top: 10px;
   font-size:25pt;
   text-align:center;
   padding-top:10px;
   font-family: 'Alex Brush', cursive;
-    text-shadow: 2px 2px white;
+  text-shadow: 2px 2px white;
+}
+
+#notice {
+  font-family:'Open Sans',sans-serif;
+  font-size:10pt;
+  text-shadow:none;
 }
 
 .social ul {
