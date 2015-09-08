@@ -80,7 +80,6 @@ a:hover {
   height:300px;
   margin-left:auto;
   margin-right:auto;
-  
   padding:10px;
   border: 1px solid #BDC0B9;
   border-radius: 5px;
@@ -93,8 +92,6 @@ a:hover {
   height:320px;
   margin-left:auto;
   margin-right:auto;
-  
-/*  background-color:#FBFCFA;*/
   background-color:black;
   position:relative;
   border: 1px solid #BDC0B9;
@@ -168,14 +165,42 @@ h2 {
 #address {
     display: inline-block;
     vertical-align: top;
-    width: 48%;
+/*    width: 49%;*/
 }
 
 #hours {
     display: inline-block;
     vertical-align: top;
-    width: 48%;
     text-align:right;
+    float:right;
+}
+
+.day_hours {
+  padding-bottom:15px;
+  display:inline-block;
+  vertical-align:top;
+  padding-right:20px;
+  width:160px;
+}
+
+.day_hours:last-child {
+  padding-right:0px;
+}
+
+.leftcol {
+  vertical-align:top;
+  font-weight:bold;
+  display:inline-block;
+}
+
+.leftcol:first-child {
+  padding-left:20px;
+}
+
+.rightcol {
+/*  width:100px;*/
+  padding-left:20px;
+  display:inline-block;
 }
 
 ul {
@@ -225,6 +250,7 @@ footer {
   padding-top:10px;
   font-family: 'Alex Brush', cursive;
   text-shadow: 2px 2px white;
+  clear:both;
 }
 
 #notice {
@@ -283,6 +309,10 @@ and (max-width : 820px) {
     .profile {
         height:100%;
     }
+    
+    .day_hours {
+      width:140px;
+    }
 }
 
 /* medium media ----------- */
@@ -309,6 +339,10 @@ and (max-width : 600px) {
     
     #navigation li {
         padding-right:40px;
+    }
+    
+    .day_hours {
+      width:98px;
     }
     
 }
@@ -341,5 +375,31 @@ and (max-width : 480px) {
     #navigation li {
         padding-right: 20px;
         padding-left:20px;
+    }
+    
+    .day_hours {
+      width:100%;
+    }
+    
+    .leftcol, .rightcol {
+      display:block;
+    }
+    
+    #hours {
+      padding-top:20px;
+      margin-top:20px;
+      text-align:center;
+      display:inline-block;
+      float:left;
+      border-top:1px solid #cccc99;
+    }
+    
+    #address {
+      display:block;
+      text-align:center;
+    }
+    
+    #hours, #address, #navigation li {
+      font-size:12pt;
     }
 }
